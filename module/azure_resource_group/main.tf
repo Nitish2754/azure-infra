@@ -5,6 +5,3 @@ resource "azurerm_resource_group" "Frontend" {
   
 }
 
-resource "azurerm_resource_group" "Backend" {
-    for_each = var.rg_map
-    name =  each.value.name
